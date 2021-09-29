@@ -4,7 +4,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
 	<style type="text/css">
-		@media(max-width:500px){
+		@media(max-width:800px){
 			body{
 				width: 100%;
 			}
@@ -33,7 +33,7 @@
 		#title{
 			color: #eecab1;
 			text-shadow: 2px 2px 4px #000000;
-			font-size: 100px;
+			font-size: 7vh;
 		}
 		#newsfeed{
 			box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -45,14 +45,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<title>Articles Page Assessment</title>
 </head>
-<body class="p-5">
-	<div class="container">
+<body>
+	<div class="container g-3">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-md-12 p-5">
+				<div>
+					<h1 id="title" class="text-center mb-5"><strong>Articles</strong></h1>
+				</div>
 
-				<h1 id="title" class="text-center mb-5"><strong>Articles</strong></h1>
-
-				<div id="articleDiv" align="center" class="card card-1 m-5 col-12 p-5 justify-content-center">
+				<div id="articleDiv" align="center" class="card card-1 p-5 justify-content-center">
 					<p id="newsfeed">
 						<h3 id="preloadfont" class="text-center">Click below to load latest articles</h3>
 						<h3 id="data" class="#title"></h3>
