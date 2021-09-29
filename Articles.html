@@ -62,7 +62,6 @@
 				<div id="articleDiv" align="center" class="card card-1 p-5 justify-content-center">
 					<p id="newsfeed">
 						<h3 id="preloadfont" class="text-center">Click below to load the latest articles</h3>
-						<h3 id="data" class="#title"></h3>
 					</p>
 				</div>
 				<hr id="showUp" style="border-radius: 50px; background-color: whitesmoke;" class="pt-1 mb-5">
@@ -115,21 +114,18 @@
 		.then((post)=>{
 			console.log(post);
 			for (let i = 0; i < 10; i++){
+
 				div.innerHTML += `
 				<div id="newsfeed" class="card p-3 mt-5 m-auto" style="border-radius: 50px; background-color: #eecab1;">
 					<p>
 						<h3 class="#title" style="color: brown;">${post[news].title}</h3>
 					</p>
 				</div>
-			`
+			`	
 				console.log(news++);
 			}
 		})
-	}
-
-
-	//Hide on click
-	
+	}	
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
