@@ -36,6 +36,8 @@
 		}
 		#newsfeed{
 			box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+			background-image: url('https://wallpaperaccess.com/full/1657662.jpg');
+			background-position: center;
 
 		}
 		#mainBtn{
@@ -48,7 +50,7 @@
 	</style>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-	<title>Articles Loader with API Page</title>
+	<title>Articles Page Assessment</title>
 </head>
 <body>
 	<div class="container g-3">
@@ -112,12 +114,12 @@
 		})
 		.then((post)=>{
 			console.log(post);
-			for (let i = 0; i < 10; i++){
+			for (let i = 0; i < 11; i++){
 
 				div.innerHTML += `
 				<div id="newsfeed" class="card p-3 mt-3 mb-3 m-auto" style="border-radius: 10px; background-color: #eecab1;">
 					<p>
-						<h3 class="#title" style="color: brown;">${post[news].title}</h3>
+						<h3 class="#title text-center" style="color: darkslategray;">${post[news].title}</h3>
 					</p>
 				</div>
 			`	
