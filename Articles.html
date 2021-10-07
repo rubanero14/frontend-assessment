@@ -115,6 +115,7 @@
 			return res.json();
 		})
 		.then((post)=>{
+                     //To verify if API data successfully loaded to console
 			console.log(post);
 			for (let i = 0; i < 11; i++){
 
@@ -125,7 +126,8 @@
 					</p>
 				</div>
 			`	
-				console.log(news++);
+			 //To verify the specified amount of API being loaded into console	
+                            console.log(news++);
 			}
 		})
 	}	
